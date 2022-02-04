@@ -17,8 +17,6 @@ const CreateExercise = () =>   {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        let send = {...form}
-        delete send.users
         console.log(form)
     }
 
