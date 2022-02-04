@@ -12,7 +12,7 @@ const CreateExercise = () =>   {
     
     useEffect(() => {
         setUsers(['test user']);
-        setForm({username: 'test user'});
+        setForm({...form,username: 'test user'});
     },[])
 
     const handleSubmit = (e) => {
@@ -74,6 +74,7 @@ const CreateExercise = () =>   {
                         <DatePicker
                             name="date"
                             selected={form.date} 
+                            onChange={(date) => setForm({...form, date})}
                         />
                     </div>
                 </div>
