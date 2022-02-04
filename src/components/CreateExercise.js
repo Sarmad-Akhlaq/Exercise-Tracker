@@ -1,25 +1,17 @@
-import React, { Component } from 'react';
+import React, {useState} from 'react';
 
-class CreateExercise extends Component {
-    constructor(props){
-        super(props);
+const CreateExercise = () =>   {
+    const [form, setForm] = useState({username:'', description:'', duration: 0, date: new Date(), user:[]})
 
-        this.state = {
-            username: '',
-            description: '',
-            duration: 0,
-            date: new Date(),
-            user: [],
-        }
+    const handleChange = (e) => {
+        setForm({...form, [e.target.value]: e.target.name})
     }
 
-  render() {
     return (
         <div>
             <p>You are on the Create Exercise component</p>
         </div>
     );
-  }
 }
 
 export default CreateExercise;

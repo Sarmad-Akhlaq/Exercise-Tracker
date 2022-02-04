@@ -1,11 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class CreateUser extends Component {
-  render() {
-    return (
-        <h1>hello</h1>
-    );
-  }
-}
+const CreateUser = () => {
+  return <div>Create User</div>;
+};
 
 export default CreateUser;
