@@ -10,16 +10,16 @@ import CreateExercise from "./components/CreateExercise";
 function App() {
   return (
     <BrowserRouter>
-      {/* <div className="container"> */}
+      <div className="container">
         <Navbar/>
-        {/* <br/> */}
+        <br/>
       <Routes>
             <Route path={"/edit/:id"} element={<EditExercise/>} />
             <Route path={"/create"} element={<CreateExercise/>} />
             <Route path={"/user"} element={<CreateUser/>} />
             <Route path={"/"} element={<ExercisesList/>} exact />
       </Routes>
-      {/* </div> */}
+      </div>
     </BrowserRouter>
   );
 }
